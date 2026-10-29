@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saharat Wiangkaew | Software Developer Portfolio & Resume</title>
+  <meta name="description" content="Portfolio และ Online Resume ของ Saharat Wiangkaew (สหรัฐ เวียงแก้ว) - Software Developer ผู้เชี่ยวชาญ Full-Stack Web Development, Python, Django, JavaScript, และ AI Integration">
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER & NAVIGATION ================= -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Saharat Wiangkaew Home">
+        <span class="brand-badge">SW</span>
+        <span>Saharat.dev</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#about" class="nav-link">เกี่ยวกับ</a></li>
+          <li><a href="#skills" class="nav-link">ทักษะ (Skills)</a></li>
+          <li><a href="#projects" class="nav-link">ผลงาน (Projects)</a></li>
+          <li><a href="#experience" class="nav-link">ประสบการณ์</a></li>
+          <li><a href="#education" class="nav-link">การศึกษา</a></li>
+          <li><a href="#contact" class="nav-link">ติดต่อ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <!-- Print / PDF Button -->
+        <button class="btn btn-outline btn-print-cv" title="พิมพ์หรือบันทึกเรซูเม่เป็น PDF">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+          <span>พิมพ์ Resume</span>
+        </button>
+
+        <!-- Theme Toggle Button -->
+        <button class="btn-icon" id="theme-toggle" aria-label="สลับโหมดการแสดงผล">
+          <span id="theme-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="btn-icon mobile-toggle" id="mobile-toggle" aria-label="เปิดเมนูมือถือ" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-status">
+            <span class="status-dot"></span>
+            <span>เปิดรับโอกาสร่วมงาน / สหกิจศึกษา (Software Developer)</span>
+          </div>
+          
+          <h1 class="hero-title">
+            สวัสดีครับ ผม <span class="highlight">สหรัฐ เวียงแก้ว</span>
+          </h1>
+          <div class="hero-subtitle">SAHARAT WIANGKAEW — Software Developer</div>
+          
+          <p class="hero-bio">
+            นักศึกษาชั้นปีที่ 4 สาขาวิทยาการข้อมูลและนวัตกรรมซอฟต์แวร์ มหาวิทยาลัยอุบลราชธานี มีพื้นฐานที่แข็งแกร่งด้านการพัฒนาซอฟต์แวร์ Full-Stack Web Application และการเชื่อมต่อระบบ AI & External APIs เรียนรู้สิ่งใหม่ได้รวดเร็ว พร้อมร่วมงานและสร้างผลลัพธ์ที่มีคุณค่าให้กับทีมเทคโนโลยี
+          </p>
+
+          <div class="hero-meta">
+            <span class="meta-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a href="mailto:saharath.wk@gmail.com">saharath.wk@gmail.com</a>
+            </span>
+            <span class="meta-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <a href="tel:0937400770">093-7400770</a>
+            </span>
+            <span class="meta-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>อุบลราชธานี / ประเทศไทย</span>
+            </span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>ดูผลงานโปรเจกต์</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-outline">ติดต่อพูดคุย</a>
+            <button class="btn btn-outline btn-print-cv">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Export CV (PDF)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Avatar Wrap -->
+        <div class="hero-image-wrap">
+          <div class="avatar-card">
+            <div class="avatar-inner">
+              <img src="assets/images/naruto1.jpg" alt="รูปโปรไฟล์ Saharat Wiangkaew" width="280" height="280" loading="eager" onerror="this.onerror=null; this.src='assets/images/profile.png';">
+            </div>
+            <div class="floating-badge">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+              <span>Data Science & Software</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <section id="about" style="background-color: var(--bg-alt);">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-badge">About Me</span>
+          <h2 class="section-title">เกี่ยวกับตัวผม</h2>
+          <p class="section-subtitle">ความมุ่งมั่น แรงบันดาลใจ และเป้าหมายในสายงานพัฒนาซอฟต์แวร์</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Summary Card -->
+          <div class="about-card">
+            <h3>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              สรุปประวัติส่วนตัว (Professional Summary)
+            </h3>
+            <p>
+              "I am a fourth-year Data Science and Software Innovation student at Ubon Ratchathani University. With a solid foundation in software development and programming, I am a fast learner who possesses strong communication and teamwork skills. I am dedicated to building positive working relationships and contributing effectively to a tech-driven environment."
+            </p>
+            <p>
+              มีความชื่นชอบและมุ่งมั่นในการเขียนโค้ดเพื่อแก้ปัญหาจริง ผ่านการลงมือพัฒนาทั้งโปรเจกต์ระดับ Full-Stack Application, ระบบ Backend API ที่ปลอดภัย มีระเบียบ ตลอดจนการบูรณาการเทคโนโลยี Generative AI (Google Gemini API) เข้ามาเสริมศักยภาพของเว็บแอปพลิเคชัน
+            </p>
+          </div>
+
+          <!-- Highlight Highlights -->
+          <div class="about-card">
+            <h3>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+              จุดเด่นและเป้าหมายการทำงาน
+            </h3>
+            <p>
+              นอกจากทักษะด้าน Software Development แล้ว ยังมีประสบการณ์จริงจากการทำงานด้าน IT Support และ Computer Technician ทำให้มีความเข้าใจโครงสร้างพื้นฐานระบบ Network, Hardware, OS Deployment และ Active Directory เป็นอย่างดี
+            </p>
+
+            <div class="stat-pills">
+              <div class="stat-pill">
+                <span class="stat-num">Full-Stack</span>
+                <span class="stat-label">Frontend + Backend Skills</span>
+              </div>
+              <div class="stat-pill">
+                <span class="stat-num">AI Ready</span>
+                <span class="stat-label">LLM / Gemini API Integration</span>
+              </div>
+              <div class="stat-pill">
+                <span class="stat-num">IT Infra</span>
+                <span class="stat-label">Hardware & Network Background</span>
+              </div>
+              <div class="stat-pill">
+                <span class="stat-num">Year 4</span>
+                <span class="stat-label">Ubon Ratchathani University</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS SECTION ================= -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-badge">Technical Skills</span>
+          <h2 class="section-title">ทักษะและความสามารถ</h2>
+          <p class="section-subtitle">เทคโนโลยี ภาษา เครื่องมือ และทักษะที่นำมาประยุกต์ใช้ในการพัฒนาโปรเจกต์</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Languages -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3>Languages (ภาษาเขียนโค้ด)</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Dart</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+            </div>
+          </div>
+
+          <!-- Frameworks & Libraries -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <h3>Frameworks & Libraries</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Django</span>
+              <span class="skill-tag">FastAPI</span>
+              <span class="skill-tag">React.js</span>
+              <span class="skill-tag">Vue.js</span>
+              <span class="skill-tag">Node.js (Express)</span>
+              <span class="skill-tag">Flutter</span>
+              <span class="skill-tag">Tailwind CSS</span>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h3>Databases (ฐานข้อมูล)</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">SQLite</span>
+            </div>
+          </div>
+
+          <!-- Tools & Platforms -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <h3>Tools & Platforms</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">pgAdmin</span>
+              <span class="skill-tag">Vercel</span>
+              <span class="skill-tag">Figma</span>
+              <span class="skill-tag">Google Gemini API</span>
+              <span class="skill-tag">Google Calendar API</span>
+            </div>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h3>Soft Skills (ทักษะส่วนบุคคล)</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Communication</span>
+              <span class="skill-tag">Teamwork & Collaboration</span>
+              <span class="skill-tag">Digital Literacy</span>
+              <span class="skill-tag">Strong Work Ethic</span>
+              <span class="skill-tag">Fast Learner</span>
+              <span class="skill-tag">Problem Solving</span>
+            </div>
+          </div>
+
+          <!-- IT & Hardware Skills -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <h3>Infrastructure & Systems</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Active Directory</span>
+              <span class="skill-tag">Microsoft 365</span>
+              <span class="skill-tag">Google Workspace</span>
+              <span class="skill-tag">Windows OS Deployment</span>
+              <span class="skill-tag">Network Troubleshooting</span>
+              <span class="skill-tag">Hardware Assembly</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS SECTION ================= -->
+    <section id="projects" style="background-color: var(--bg-alt);">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-badge">Featured Projects</span>
+          <h2 class="section-title">ผลงานโปรเจกต์</h2>
+          <p class="section-subtitle">ผลงานการพัฒนา Full-Stack และเว็บแอปพลิเคชันที่สร้างขึ้น</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Smart Study Planner -->
+          <div class="project-card">
+            <span class="project-badge-top badge-final">Final Project • Full-Stack</span>
+            <h3 class="project-title">Smart Study Planner</h3>
+            <div class="project-subtitle">เว็บแอปพลิเคชันวางแผนการเรียนอัจฉริยะด้วย Generative AI</div>
+            
+            <p class="project-desc">
+              เว็บแอปพลิเคชัน Full-Stack ที่พัฒนาขึ้นด้วย Django เพื่อช่วยผู้เรียนจัดสรรเวลาเรียนอย่างมีประสิทธิภาพ โดยประยุกต์ใช้โมเดล Google Gemini AI ในการวิเคราะห์เนื้อหาและสร้างตารางเรียนเฉพาะบุคคล สรุปบทเรียน และสร้างแบบทดสอบ (Quizzes) พร้อมเชื่อมโยงกับ Google Calendar ได้อย่างราบรื่น
+            </p>
+
+            <ul class="project-features">
+              <li>ใช้ <strong>Google Gemini AI</strong> สรุปเนื้อหาการเรียน และสร้างชุดคำถามทบทวนความรู้โดยอัตโนมัติ</li>
+              <li>เชื่อมต่อ <strong>Google Calendar API</strong> สำหรับ Sync ตารางการเรียนและแจ้งเตือนการอ่านหนังสือ</li>
+              <li>ระบบจัดการผู้ใช้งานและจัดเก็บข้อมูลแบบ Relational Database (PostgreSQL / SQLite)</li>
+              <li>ดีไซน์ UI ที่ตอบสนองการใช้งานบนทุกอุปกรณ์ด้วย Responsive HTML/CSS</li>
+            </ul>
+
+            <div class="project-techs">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Django</span>
+              <span class="tech-tag">Google Gemini API</span>
+              <span class="tech-tag">Google Calendar API</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">SQLite</span>
+              <span class="tech-tag">HTML5 / CSS3</span>
+            </div>
+          </div>
+
+          <!-- Project 2: Service Booking (Restaurant Table Reservation System) -->
+          <div class="project-card">
+            <span class="project-badge-top badge-mini">Mini Project • Web System</span>
+            <h3 class="project-title">Service Booking</h3>
+            <div class="project-subtitle">Restaurant Table Reservation System (ระบบจองโต๊ะร้านอาหาร)</div>
+            
+            <p class="project-desc">
+              ระบบบริหารจัดการและสำรองโต๊ะสำหรับร้านอาหาร เพื่ออำนวยความสะดวกให้ลูกค้าสามารถเลือกจองโต๊ะและเวลาที่ต้องการล่วงหน้า พร้อมระบบจัดการหลังบ้านสำหรับพนักงานและผู้ดูแลระบบ
+            </p>
+
+            <ul class="project-features">
+              <li>ระบบ <strong>Role-Based Access Control (RBAC)</strong> แยกสิทธิ์การใช้งานชัดเจนระหว่าง Admin และ Customer</li>
+              <li>ระบบจัดการโต๊ะอาหาร (Table Management) ตรวจสอบสถานะว่าง/ไม่ว่างของแต่ละโต๊ะแบบ Real-time</li>
+              <li>ระบบตรวจสอบเงื่อนไขเวลาจอง พร้อมระบบควบคุมการแก้ไข/ยกเลิกการจองตามเงื่อนไขเวลาที่กำหนด (Time-restricted modifications)</li>
+              <li>Dashboard สรุปรายการจองประจำวันสำหรับผู้จัดการร้าน</li>
+            </ul>
+
+            <div class="project-techs">
+              <span class="tech-tag">Web Development</span>
+              <span class="tech-tag">Role-Based Access (RBAC)</span>
+              <span class="tech-tag">Database Management</span>
+              <span class="tech-tag">Booking Logic</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE & EDUCATION ================= -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-badge">Career & Background</span>
+          <h2 class="section-title">ประสบการณ์และการศึกษา</h2>
+          <p class="section-subtitle">เส้นทางการเรียนรู้และประสบการณ์การทำงานที่ผ่านมา</p>
+        </div>
+
+        <div class="dual-timeline-grid">
+          <!-- Work Experience Column -->
+          <div class="timeline-column">
+            <h3>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+              ประสบการณ์การทำงาน (Work Experience)
+            </h3>
+
+            <div class="timeline">
+              <!-- Item 1: Advice -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">พฤษภาคม 2022 – กันยายน 2022</div>
+                <div class="timeline-role">Computer Technician (ช่างเทคนิคคอมพิวเตอร์)</div>
+                <div class="timeline-company">ADVICE | บริษัท แอดไวซ์ ไอที อินฟินิท จำกัด (มหาชน)</div>
+                <div class="timeline-content">
+                  <ul class="timeline-bullets">
+                    <li>ประกอบเครื่องคอมพิวเตอร์ตามความต้องการของลูกค้า (Custom PC Builds) พร้อมตรวจสอบและแก้ปัญหาฮาร์ดแวร์ในระดับชิ้นส่วน (Component-level Troubleshooting)</li>
+                    <li>ดำเนินการติดตั้งและกำหนดค่าระบบปฏิบัติการ (OS Deployments) และ Driver ต่างๆ ให้ทำงานได้เต็มประสิทธิภาพ</li>
+                    <li>ให้คำแนะนำเชิงเทคนิคแก่ลูกค้าในการเลือกใช้อุปกรณ์คอมพิวเตอร์ที่เหมาะสมกับงบประมาณและการใช้งาน มุ่งเน้นการแก้ปัญหาและความพึงพอใจสูงสุดของลูกค้า</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Item 2: P.S.CH. GROUP -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">พฤษภาคม 2021 – มีนาคม 2022</div>
+                <div class="timeline-role">IT Support (เจ้าหน้าที่ฝ่ายไอที)</div>
+                <div class="timeline-company">P.S.CH. GROUP | บริษัท พ.ศ.ช. ผลิตภัณฑ์อาหาร จำกัด</div>
+                <div class="timeline-content">
+                  <ul class="timeline-bullets">
+                    <li>ให้บริการช่วยเหลือและแก้ไขปัญหาด้าน Hardware, Software และ Network แก่ผู้ใช้งานในองค์กรอย่างรวดเร็ว (Prompt Troubleshooting)</li>
+                    <li>ดูแลบำรุงรักษาเครื่องคอมพิวเตอร์และอุปกรณ์สำนักงาน พร้อมดำเนินการติดตั้งและปรับใช้ Windows OS ให้พร้อมใช้งาน</li>
+                    <li>บริหารจัดการบัญชีผู้ใช้งาน สิทธิ์การเข้าถึง และระบบอีเมลองค์กร โดยใช้ Active Directory, Microsoft 365 และ Google Workspace</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education Column -->
+          <div class="timeline-column" id="education">
+            <h3>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+              ประวัติการศึกษา (Education)
+            </h3>
+
+            <div class="timeline">
+              <!-- Item 1: Ubon University -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2023 – ปัจจุบัน (คาดว่าจะสำเร็จการศึกษา: 2027)</div>
+                <div class="timeline-role">วิทยาศาสตรบัณฑิต (วท.บ.) วิทยาการข้อมูลและนวัตกรรมซอฟต์แวร์</div>
+                <div class="timeline-company">คณะวิทยาศาสตร์ มหาวิทยาลัยอุบลราชธานี</div>
+                <div class="timeline-content">
+                  <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 0.75rem;">
+                    <strong>ระดับการศึกษา:</strong> นักศึกษาชั้นปีที่ 4 (Fourth-Year Student)
+                  </p>
+                  <ul class="timeline-bullets">
+                    <li><strong>สาขาวิชา:</strong> Data Science and Software Innovation</li>
+                    <li><strong>วิชาหลัก:</strong> Data Structures & Algorithms, Object-Oriented Programming, Web Application Development, Database Systems, Machine Learning & Data Science Basics</li>
+                    <li><strong>โครงงานสำคัญ:</strong> พัฒนาโปรเจกต์ Smart Study Planner นำเสนอโซลูชันด้านการศึกษาด้วย Django และ Google Gemini AI</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section id="contact" style="background-color: var(--bg-alt);">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-badge">Get in Touch</span>
+          <h2 class="section-title">ติดต่อผม</h2>
+          <p class="section-subtitle">ยินดีพูดคุยแลกเปลี่ยนเรื่องโอกาสในการทำงาน สหกิจศึกษา หรือโปรเจกต์พัฒนาซอฟต์แวร์</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Email Card -->
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div class="contact-title">อีเมล (Email)</div>
+            <div class="contact-value">saharath.wk@gmail.com</div>
+            <div style="display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap;">
+              <a href="mailto:saharath.wk@gmail.com" class="btn btn-primary" style="font-size: 0.85rem; padding: 0.45rem 1rem;">
+                ส่งอีเมล
+              </a>
+              <button class="btn btn-outline copy-btn" id="copy-email-btn" title="คลิกเพื่อคัดลอกอีเมล">
+                คัดลอกอีเมล
+              </button>
+            </div>
+          </div>
+
+          <!-- Phone Card -->
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <div class="contact-title">เบอร์โทรศัพท์ (Phone)</div>
+            <div class="contact-value">093-7400770</div>
+            <a href="tel:0937400770" class="btn btn-outline" style="font-size: 0.85rem; padding: 0.45rem 1rem;">
+              โทรติดต่อทันที
+            </a>
+          </div>
+
+          <!-- Location Card -->
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div class="contact-title">ที่อยู่ / พื้นที่ทำงาน</div>
+            <div class="contact-value">จ.อุบลราชธานี, ประเทศไทย</div>
+            <span class="skill-tag" style="align-self: center;">ยินดีรับงานแบบ On-site / Hybrid / Remote</span>
+          </div>
+        </div>
+
+        <!-- Banner for Recruiter -->
+        <div class="ready-hire-banner">
+          <h3>พร้อมร่วมงานในตำแหน่ง Software Developer</h3>
+          <p>
+            หากท่านกำลังมองหานักพัฒนาซอฟต์แวร์รุ่นใหม่ที่กระตือรือร้น มีทักษะทั้งด้าน Full-Stack และ IT Infrastructure สามารถดาวน์โหลดเรซูเม่ฉบับย่อหรือติดต่อผมได้ทันทีครับ
+          </p>
+          <div class="ready-actions">
+            <a href="mailto:saharath.wk@gmail.com" class="btn btn-primary">ส่งข้อความติดต่อ</a>
+            <button class="btn btn-outline btn-print-cv">พิมพ์ / บันทึกเรซูเม่ (PDF)</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-text">
+        © 2026 <strong>Saharat Wiangkaew</strong>. พัฒนาด้วย Pure HTML5 & CSS3 (No Frameworks).
+      </div>
+      <a href="#hero" class="back-to-top">
+        <span>กลับขึ้นด้านบน</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="12" y1="19" x2="12" y2="5"></line>
+          <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
