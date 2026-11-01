@@ -143,4 +143,44 @@ document.addEventListener('DOMContentLoaded', () => {
       toast.classList.remove('show');
     }, 3200);
   }
+
+  // --- 6. Image Modal Lightbox for Project Screenshots ---
+  const imageModal = document.getElementById('image-modal');
+  const modalImg = document.getElementById('modal-img');
+  const modalCaption = document.getElementById('modal-caption');
+  const modalClose = document.getElementById('modal-close');
+  const galleryItems = document.querySelectorAll('.gallery-item');
+
+  if (imageModal && modalImg && modalClose) {
+    galleryItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const imgSrc = item.getAttribute('data-img');
+        const captionText = item.getAttribute('data-caption');
+        modalImg.src = imgSrc;
+        modalImg.alt = captionText;
+        if (modalCaption) modalCaption.textContent = captionText;
+        imageModal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    modalClose.addEventListener('click', closeModal);
+    imageModal.addEventListener('click', (e) => {
+      if (e.target === imageModal) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && imageModal.classList.contains('open')) {
+        closeModal();
+      }
+    });
+
+    function closeModal() {
+      imageModal.classList.remove('open');
+      document.body.style.overflow = '';
+      modalImg.src = '';
+    }
+  }
 });

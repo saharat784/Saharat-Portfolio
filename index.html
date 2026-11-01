@@ -365,31 +365,297 @@
         </div>
 
         <div class="projects-grid">
-          <!-- Project 1: Smart Study Planner -->
-          <div class="project-card">
-            <span class="project-badge-top badge-final">Final Project • Full-Stack</span>
-            <h3 class="project-title">Smart Study Planner</h3>
-            <div class="project-subtitle">เว็บแอปพลิเคชันวางแผนการเรียนอัจฉริยะด้วย Generative AI</div>
+          <!-- Project 1: Smart Study Planner (Featured Deep Dive) -->
+          <div class="project-card featured-showcase">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
+              <span class="project-badge-top badge-final" style="margin-bottom: 0;">Senior Project • Full-Stack Web Application</span>
+              <span style="font-size: 0.85rem; color: var(--text-light); font-weight: 600;">ปีการศึกษา 2568 | มหาวิทยาลัยอุบลราชธานี</span>
+            </div>
             
-            <p class="project-desc">
-              เว็บแอปพลิเคชัน Full-Stack ที่พัฒนาขึ้นด้วย Django เพื่อช่วยผู้เรียนจัดสรรเวลาเรียนอย่างมีประสิทธิภาพ โดยประยุกต์ใช้โมเดล Google Gemini AI ในการวิเคราะห์เนื้อหาและสร้างตารางเรียนเฉพาะบุคคล สรุปบทเรียน และสร้างแบบทดสอบ (Quizzes) พร้อมเชื่อมโยงกับ Google Calendar ได้อย่างราบรื่น
-            </p>
+            <h3 class="project-title" style="font-size: 1.85rem; margin-bottom: 0.35rem;">ระบบจัดตารางอ่านหนังสืออัตโนมัติ (Smart Study Planner)</h3>
+            <div class="project-subtitle" style="font-size: 1.1rem; color: var(--primary); margin-bottom: 1.5rem;">
+              Intelligent Study Schedule Orchestrator & AI Learning Assistant (Django, PostgreSQL, Google Gemini AI, Google Calendar API)
+            </div>
 
-            <ul class="project-features">
-              <li>ใช้ <strong>Google Gemini AI</strong> สรุปเนื้อหาการเรียน และสร้างชุดคำถามทบทวนความรู้โดยอัตโนมัติ</li>
-              <li>เชื่อมต่อ <strong>Google Calendar API</strong> สำหรับ Sync ตารางการเรียนและแจ้งเตือนการอ่านหนังสือ</li>
-              <li>ระบบจัดการผู้ใช้งานและจัดเก็บข้อมูลแบบ Relational Database (PostgreSQL / SQLite)</li>
-              <li>ดีไซน์ UI ที่ตอบสนองการใช้งานบนทุกอุปกรณ์ด้วย Responsive HTML/CSS</li>
-            </ul>
+            <!-- Overview Grid: Description + Project Metadata -->
+            <div class="project-overview-grid">
+              <div>
+                <p class="project-desc" style="margin-bottom: 1rem;">
+                  <strong>Smart Study Planner</strong> เป็นระบบเว็บแอปพลิเคชันที่พัฒนาขึ้นเพื่อแก้ปัญหาการบริหารเวลาของนักเรียนและนักศึกษาในการเตรียมตัวสอบ โดยระบบสามารถวิเคราะห์ข้อมูลรายวิชา ระดับความยากง่าย วันเวลาสอบจริง และช่วงเวลาว่างในแต่ละสัปดาห์ของผู้เรียน เพื่อคำนวณและสร้างตารางอ่านหนังสือแบบปรับแต่งเฉพาะบุคคล (Personalized Study Schedule) ได้อย่างสมดุล ไม่โหลดเกินไป และครอบคลุมเนื้อหาก่อนสอบ
+                </p>
+                <p class="project-desc" style="margin-bottom: 1rem;">
+                  นอกจากระบบการคำนวณตารางแล้ว ยังผสานพลังของ <strong>Google Gemini AI (LLM)</strong> เพื่อช่วยสรุปประเด็นสำคัญ (Key Takeaways) ทันทีหลังอ่านจบ และสร้างแบบทดสอบประเมินตนเอง (Interactive Quizzes) พร้อมเฉลยละเอียดแบบอัตโนมัติ และเชื่อมต่อ <strong>Google Calendar API</strong> ให้แจ้งเตือนบนสมาร์ตโฟนได้แบบ Real-time
+                </p>
+                <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1rem;">
+                  <a href="assets/docs/ระบบจัดตารางอ่านหนังสืออัตโนมัติ.pdf" target="_blank" class="btn btn-outline" style="font-size: 0.88rem; padding: 0.5rem 1rem;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                      <polyline points="14 2 14 8 20 8"></polyline>
+                      <line x1="16" y1="13" x2="8" y2="13"></line>
+                      <line x1="16" y1="17" x2="8" y2="17"></line>
+                    </svg>
+                    <span>เปิดอ่านเล่มโครงงานฉบับสมบูรณ์ (PDF)</span>
+                  </a>
+                </div>
+              </div>
 
+              <!-- Project Metadata Box -->
+              <div class="project-meta-box">
+                <div class="meta-row">
+                  <span class="meta-label">อาจารย์ที่ปรึกษา</span>
+                  <span class="meta-value">ผศ.ดร.ไพชยนต์ คงไชย</span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-label">หลักสูตร / สาขาวิชา</span>
+                  <span class="meta-value">วท.บ. วิทยาการข้อมูลและนวัตกรรมซอฟต์แวร์</span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-label">สถาปัตยกรรมระบบ</span>
+                  <span class="meta-value">Full-Stack MVT Architecture</span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-label">Backend & Server</span>
+                  <span class="meta-value">Python, Django Framework</span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-label">ฐานข้อมูล (Database)</span>
+                  <span class="meta-value">PostgreSQL, Supabase, SQLite</span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-label">AI Model & APIs</span>
+                  <span class="meta-value">Google Gemini AI, Calendar API</span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-label">Frontend Stack</span>
+                  <span class="meta-value">HTML5, CSS3, JavaScript (Responsive)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Key Modules & Capabilities -->
+            <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--text-main); margin-bottom: 0.75rem;">
+              สถาปัตยกรรมและฟังก์ชันสำคัญของระบบ (System Core Modules)
+            </h4>
+
+            <div class="system-modules-grid">
+              <div class="module-card">
+                <h4>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                  1. Auto-Scheduling Algorithm
+                </h4>
+                <p>
+                  อัลกอริทึมจัดตารางอัจฉริยะ นำข้อมูลเวลาว่าง (เช้า/บ่าย/เย็น/ดึก หรือรายชั่วโมง), ระดับความยากง่ายของวิชา และวันสอบ มาประมวลผลผ่าน AI Prompt Constraint Scheduling จัดสรร Session การอ่านและช่วงเวลาพักผ่อนได้อย่างพอดี
+                </p>
+              </div>
+
+              <div class="module-card">
+                <h4>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10H12V2z"></path><path d="M12 2a10 10 0 0 1 10 10h-10V2z" fill="currentColor"></path></svg>
+                  2. AI Content Summarization
+                </h4>
+                <p>
+                  เชื่อมต่อ Google Gemini API ให้ทำหน้าที่เป็นติวเตอร์ส่วนตัว สรุปสาระสำคัญหลังอ่านจบแบบหัวข้อย่อย (Key Takeaways) เป็นภาษาไทยที่กระชับ เข้าใจง่าย และบันทึกเข้า "สมุดบันทึกสรุป" เพื่อเปิดทบทวนภายหลังได้
+                </p>
+              </div>
+
+              <div class="module-card">
+                <h4>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+                  3. Dynamic AI Quiz Generator
+                </h4>
+                <p>
+                  สร้างข้อสอบปรนัย (Multiple Choice) 5 ข้อแบบไดนามิกตามบทเรียนที่เพิ่งอ่าน ตรวจคำตอบแบบ Interactive พร้อมคำนวณคะแนนและแสดงหน้าเฉลยคำตอบพร้อมคำอธิบายเพื่อวัดระดับความเข้าใจจริง
+                </p>
+              </div>
+
+              <div class="module-card">
+                <h4>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                  4. Google Calendar Sync & OAuth 2.0
+                </h4>
+                <p>
+                  เชื่อมต่อ Google Calendar API ผ่าน OAuth 2.0 ซิงค์กิจกรรมและช่วงเวลาอ่านหนังสือขึ้นบน Google Calendar ของผู้ใช้โดยอัตโนมัติ พร้อมรองรับการอัปเดตและลบอีเวนต์เมื่อมีการคำนวณตารางใหม่
+                </p>
+              </div>
+
+              <div class="module-card">
+                <h4>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  5. Study Session Timer & Focus Mode
+                </h4>
+                <p>
+                  ระบบจับเวลาขณะอ่านหนังสือตามเวลาที่กำหนด (เช่น 45/60 นาที) มีโหมดพักเบรก และระบบบันทึกความคืบหน้า (Checkbox & Progress Bar) เพื่อติดตามเปอร์เซ็นต์ความสำเร็จของแต่ละวิชา
+                </p>
+              </div>
+
+              <div class="module-card">
+                <h4>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                  6. Subject & Lecture File Management
+                </h4>
+                <p>
+                  ระบบจัดการรายวิชา เพิ่ม/ลบวิชา กำหนดความยากง่าย วันเวลาสอบ และอัปโหลดไฟล์เอกสารประกอบการเรียนการสอน (รองรับ .pdf, .txt สูงสุด 5 ไฟล์/วิชา) เพื่อนำไปใช้อ้างอิงการสรุปเนื้อหา
+                </p>
+              </div>
+            </div>
+
+            <!-- Screenshots Gallery -->
+            <div class="gallery-section-title">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
+              <span>ภาพหน้าจอการทำงานจริงของระบบ (System Interface Gallery)</span>
+              <span style="font-size: 0.85rem; font-weight: 500; color: var(--text-light); margin-left: auto;">(คลิกที่ภาพเพื่อขยายดูขนาดเต็ม)</span>
+            </div>
+
+            <div class="gallery-grid">
+              <!-- Item 1: Landing Page -->
+              <div class="gallery-item" data-img="assets/sspimg/Quiz Presentation.png" data-caption="ภาพที่ ค.1.1 หน้าแรกของเว็บไซต์ (Landing Page) ระบบ Smart Study Planner">
+                <div class="gallery-img-wrap">
+                  <img src="assets/sspimg/Quiz Presentation.png" alt="หน้าแรก Landing Page" loading="lazy">
+                </div>
+                <div class="gallery-info">
+                  <span class="gallery-badge">หน้าหลัก</span>
+                  <span class="gallery-caption">Landing Page & แนะนำระบบ</span>
+                </div>
+              </div>
+
+              <!-- Item 2: Home Dashboard -->
+              <div class="gallery-item" data-img="assets/sspimg/3.png" data-caption="ภาพที่ ค.1.4 หน้าแดชบอร์ดหลัก (Home Dashboard) แสดงภาพรวมตารางอ่านหนังสือ และเมนูนำทาง">
+                <div class="gallery-img-wrap">
+                  <img src="assets/sspimg/3.png" alt="หน้า Home Dashboard" loading="lazy">
+                </div>
+                <div class="gallery-info">
+                  <span class="gallery-badge">Dashboard</span>
+                  <span class="gallery-caption">แดชบอร์ดภาพรวมตารางการอ่าน</span>
+                </div>
+              </div>
+
+              <!-- Item 3: Add Subject & Files -->
+              <div class="gallery-item" data-img="assets/sspimg/4.png" data-caption="ภาพที่ ค.1.5 หน้าเพิ่มรายวิชา กำหนดระดับความยาก วันสอบ และอัปโหลดไฟล์เอกสารเรียน (.pdf, .txt)">
+                <div class="gallery-img-wrap">
+                  <img src="assets/sspimg/4.png" alt="หน้าเพิ่มวิชาและไฟล์" loading="lazy">
+                </div>
+                <div class="gallery-info">
+                  <span class="gallery-badge">จัดการวิชา</span>
+                  <span class="gallery-caption">เพิ่มวิชา, วันสอบ & อัปโหลดเอกสาร</span>
+                </div>
+              </div>
+
+              <!-- Item 4: Set Availability -->
+              <div class="gallery-item" data-img="assets/sspimg/5.png" data-caption="ภาพที่ ค.1.6 หน้ากำหนดช่วงเวลาว่างในแต่ละวัน (เช้า, บ่าย, เย็น, ดึก หรือเลือกรายชั่วโมง)">
+                <div class="gallery-img-wrap">
+                  <img src="assets/sspimg/5.png" alt="หน้ากำหนดเวลาว่าง" loading="lazy">
+                </div>
+                <div class="gallery-info">
+                  <span class="gallery-badge">เวลาว่าง</span>
+                  <span class="gallery-caption">กำหนดช่วงเวลาว่างรายวัน/สัปดาห์</span>
+                </div>
+              </div>
+
+              <!-- Item 5: Study Settings -->
+              <div class="gallery-item" data-img="assets/sspimg/7.png" data-caption="ภาพที่ ค.1.7 หน้าตั้งค่าระยะเวลาการอ่าน (Session Duration) และเวลาพักเบรก (Break Duration)">
+                <div class="gallery-img-wrap">
+                  <img src="assets/sspimg/7.png" alt="หน้าตั้งค่าการเรียน" loading="lazy">
+                </div>
+                <div class="gallery-info">
+                  <span class="gallery-badge">การตั้งค่า</span>
+                  <span class="gallery-caption">ตั้งค่าเวลาอ่าน-พัก & สั่งสร้างตาราง</span>
+                </div>
+              </div>
+
+              <!-- Item 6: Study Calendar Schedule -->
+              <div class="gallery-item" data-img="assets/sspimg/8.png" data-caption="ภาพที่ ค.1.8 ตารางแผนการอ่านหนังสือรายสัปดาห์ที่ AI ประมวลผลและจัดให้อัตโนมัติ">
+                <div class="gallery-img-wrap">
+                  <img src="assets/sspimg/8.png" alt="ตารางแผนการอ่าน" loading="lazy">
+                </div>
+                <div class="gallery-info">
+                  <span class="gallery-badge">ตารางอ่าน</span>
+                  <span class="gallery-caption">ตารางแผนการอ่านปฏิทินที่ AI จัดให้</span>
+                </div>
+              </div>
+
+              <!-- Item 7: Statistics Overview -->
+              <div class="gallery-item" data-img="assets/sspimg/10.png" data-caption="ภาพที่ ค.1.10 สถิติภาพรวม แสดงความคืบหน้าการอ่าน (%) และวิชาทั้งหมด">
+                <div class="gallery-img-wrap">
+                  <img src="assets/sspimg/10.png" alt="สถิติภาพรวม" loading="lazy">
+                </div>
+                <div class="gallery-info">
+                  <span class="gallery-badge">สถิติ</span>
+                  <span class="gallery-caption">สถิติภาพรวม & เปอร์เซ็นต์ความคืบหน้า</span>
+                </div>
+              </div>
+
+              <!-- Item 8: Start Reading / Timer -->
+              <div class="gallery-item" data-img="assets/sspimg/12.png" data-caption="ภาพที่ ค.1.13 หน้าเริ่มอ่านหนังสือ พร้อมตัวจับเวลานับถอยหลัง (Focus Session Timer)">
+                <div class="gallery-img-wrap">
+                  <img src="assets/sspimg/12.png" alt="หน้าเริ่มอ่านและจับเวลา" loading="lazy">
+                </div>
+                <div class="gallery-info">
+                  <span class="gallery-badge">โหมดอ่าน</span>
+                  <span class="gallery-caption">เริ่มอ่าน & ตัวจับเวลานับถอยหลัง</span>
+                </div>
+              </div>
+
+              <!-- Item 9: AI Summary & Quiz Selection -->
+              <div class="gallery-item" data-img="assets/sspimg/13.png" data-caption="ภาพที่ ค.1.14 เมื่ออ่านหมดเวลา เลือกระหว่างให้ AI สรุปเนื้อหา หรือทำแบบทดสอบวัดความรู้">
+                <div class="gallery-img-wrap">
+                  <img src="assets/sspimg/13.png" alt="หน้าสรุปเนื้อหาและทำแบบทดสอบ" loading="lazy">
+                </div>
+                <div class="gallery-info">
+                  <span class="gallery-badge">AI Assistant</span>
+                  <span class="gallery-caption">เลือกสรุปเนื้อหา / ทำแบบทดสอบ AI</span>
+                </div>
+              </div>
+
+              <!-- Item 10: Summary Notebook -->
+              <div class="gallery-item" data-img="assets/sspimg/14.png" data-caption="ภาพที่ ค.1.15 สมุดบันทึกสรุป (Summary Notebook) จัดเก็บเนื้อหาที่ AI สรุปไว้ให้อ่านย้อนหลัง">
+                <div class="gallery-img-wrap">
+                  <img src="assets/sspimg/14.png" alt="สมุดบันทึกสรุป" loading="lazy">
+                </div>
+                <div class="gallery-info">
+                  <span class="gallery-badge">สมุดบันทึก</span>
+                  <span class="gallery-caption">สมุดบันทึกสรุปเนื้อหาย้อนหลัง</span>
+                </div>
+              </div>
+
+              <!-- Item 11: Registration Page -->
+              <div class="gallery-item" data-img="assets/sspimg/1.png" data-caption="ภาพที่ ค.1.2 หน้าสมัครสมาชิก (Sign Up) พร้อมรองรับการสมัครด้วย Google Account">
+                <div class="gallery-img-wrap">
+                  <img src="assets/sspimg/1.png" alt="หน้าสมัครสมาชิก" loading="lazy">
+                </div>
+                <div class="gallery-info">
+                  <span class="gallery-badge">Auth</span>
+                  <span class="gallery-caption">หน้าลงทะเบียน & Google Sign-in</span>
+                </div>
+              </div>
+
+              <!-- Item 12: Login Page -->
+              <div class="gallery-item" data-img="assets/sspimg/2.png" data-caption="ภาพที่ ค.1.3 หน้าเข้าสู่ระบบ (Sign In) มีระบบตรวจสอบความถูกต้องและรักษาความปลอดภัย">
+                <div class="gallery-img-wrap">
+                  <img src="assets/sspimg/2.png" alt="หน้าเข้าสู่ระบบ" loading="lazy">
+                </div>
+                <div class="gallery-info">
+                  <span class="gallery-badge">Auth</span>
+                  <span class="gallery-caption">หน้าเข้าสู่ระบบ (Authentication)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tech Badges -->
             <div class="project-techs">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Django</span>
-              <span class="tech-tag">Google Gemini API</span>
+              <span class="tech-tag" style="background: #2563eb; color: #fff; border-color: #2563eb;">Python 3.12</span>
+              <span class="tech-tag" style="background: #092e20; color: #44b78b; border-color: #44b78b;">Django 5.0 MVT</span>
+              <span class="tech-tag">Google Gemini AI (LLM)</span>
               <span class="tech-tag">Google Calendar API</span>
-              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">OAuth 2.0 Authentication</span>
+              <span class="tech-tag">PostgreSQL / Supabase</span>
               <span class="tech-tag">SQLite</span>
-              <span class="tech-tag">HTML5 / CSS3</span>
+              <span class="tech-tag">HTML5 / CSS3 / JavaScript</span>
+              <span class="tech-tag">Constraint-based Scheduling</span>
+              <span class="tech-tag">Dynamic Quiz Engine</span>
             </div>
           </div>
 
@@ -599,6 +865,19 @@
 
   <!-- Toast Notification -->
   <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+
+  <!-- Image Modal Lightbox for Project Screenshots -->
+  <div class="image-modal" id="image-modal" role="dialog" aria-modal="true" aria-label="ภาพตัวอย่างขนาดเต็ม">
+    <div class="modal-content-wrap">
+      <div class="modal-img-container">
+        <img src="" alt="" id="modal-img">
+      </div>
+      <div class="modal-caption-bar">
+        <span class="modal-caption-text" id="modal-caption"></span>
+        <button class="modal-close-btn" id="modal-close" aria-label="ปิดหน้าต่าง">✕</button>
+      </div>
+    </div>
+  </div>
 
   <!-- JavaScript -->
   <script src="script.js"></script>
