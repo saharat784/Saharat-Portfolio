@@ -257,11 +257,13 @@
             </div>
             <div class="skill-tags">
               <span class="skill-tag">Django</span>
+              <span class="skill-tag">Django REST Framework</span>
+              <span class="skill-tag">Flutter / Dart</span>
+              <span class="skill-tag">Riverpod</span>
               <span class="skill-tag">FastAPI</span>
               <span class="skill-tag">React.js</span>
               <span class="skill-tag">Vue.js</span>
               <span class="skill-tag">Node.js (Express)</span>
-              <span class="skill-tag">Flutter</span>
               <span class="skill-tag">Tailwind CSS</span>
               <span class="skill-tag">GoF Design Patterns</span>
             </div>
@@ -305,6 +307,7 @@
               <span class="skill-tag">Ollama</span>
               <span class="skill-tag">Streamlit</span>
               <span class="skill-tag">uv</span>
+              <span class="skill-tag">OAuth 2.0 / OIDC</span>
               <span class="skill-tag">Vercel</span>
               <span class="skill-tag">pgAdmin</span>
               <span class="skill-tag">Google Gemini API</span>
@@ -1025,7 +1028,159 @@
             </div>
           </div>
 
-          <!-- Project 4: Service Booking (Restaurant Table Reservation System) -->
+          <!-- Project 4: CoinTree — Gamified Personal Finance & Habit Tracker -->
+          <div class="project-card featured-showcase">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
+              <span class="project-badge-top badge-mobile" style="margin-bottom: 0;">Full-Stack Mobile & Web • Gamification</span>
+              <span style="font-size: 0.85rem; color: var(--text-light); font-weight: 600;">Role: Full-Stack Developer (Flutter + Django)</span>
+            </div>
+
+            <h3 class="project-title" style="font-size: 1.85rem; margin-bottom: 0.35rem;">CoinTree — Gamified Personal Finance & Habit Tracker</h3>
+            <div class="project-subtitle" style="font-size: 1.1rem; color: var(--primary); margin-bottom: 1.5rem;">
+              แอปพลิเคชันบันทึกรายรับ-รายจ่ายผสานระบบปลูกต้นไม้ออมเงิน พร้อมความปลอดภัยระดับมาตรฐาน OIDC + PKCE
+            </div>
+
+            <!-- Overview Grid: Description + Metadata Box -->
+            <div class="project-overview-grid">
+              <div>
+                <p class="project-desc" style="margin-bottom: 1rem;">
+                  <strong>CoinTree</strong> คือแอปพลิเคชันบันทึกรายรับ-รายจ่ายที่ผสานแนวคิด <strong>Gamification</strong> เพื่อเปลี่ยนการทำบัญชีที่น่าเบื่อให้กลายเป็นการสร้างวินัยทางการเงินอย่างยั่งยืน โดยเชื่อมโยงพฤติกรรมการบันทึกบัญชีและการออมเงินเข้ากับการเติบโตของ "ต้นไม้เสมือนจริง (Pet/Tree Evolution)" ยิ่งบันทึกต่อเนื่อง (Streak Days) ต้นไม้จะยิ่งเติบโต พร้อมรับเหรียญ (Coins) และ XP ไปสุ่มกาชาของตกแต่ง (Cosmetics)
+                </p>
+                <p class="project-desc" style="margin-bottom: 1rem;">
+                  ระบบถูกออกแบบด้วยสถาปัตยกรรม Full-Stack Application ที่เน้นความปลอดภัยระดับมาตรฐานอุตสาหกรรมด้วย <strong>OAuth 2.0 / OpenID Connect (OIDC) พร้อม PKCE</strong> จัดการ State ภายในแอปพลิเคชันด้วย Riverpod และพัฒนา RESTful APIs ผ่าน Django REST Framework
+                </p>
+
+                <!-- STAR Method Resume Summary Banner -->
+                <div class="info-banner" style="margin-top: 1rem;">
+                  <h4>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                    สรุปผลงานตาม STAR Method (Resume Highlights)
+                  </h4>
+                  <ul>
+                    <li><strong>Full-Stack & Gamification:</strong> พัฒนา Full-Stack Mobile/Web Application ส่งเสริมวินัยการเงินผ่านระบบ Gamification (Tree Evolution 4 ระดับ, Streak Tracking, Gacha System)</li>
+                    <li><strong>Enterprise-Grade Security:</strong> ออกแบบระบบยืนยันตัวตนด้วยมาตรฐาน OAuth 2.0 / OpenID Connect (Authorization Code Flow with PKCE) ผ่าน django-oidc-provider และ flutter_secure_storage</li>
+                    <li><strong>Reactive State Management:</strong> จัดการ State ภายในแอปด้วย Riverpod เพื่อรองรับการทำงานแบบ Reactive และแยก Business Logic ตามสถาปัตยกรรม Clean Code</li>
+                    <li><strong>Robust Backend & Visual Analytics:</strong> พัฒนา RESTful APIs ด้วย Django REST Framework พร้อม Normalized Database Schema และแสดงกราฟสัดส่วนค่าใช้จ่ายด้วย fl_chart</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Project Metadata Box -->
+              <div class="project-meta-box">
+                <div class="meta-row">
+                  <span class="meta-label">บทบาท (Role)</span>
+                  <span class="meta-value">Full-Stack Developer</span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-label">Frontend Stack</span>
+                  <span class="meta-value">Flutter / Dart (Cross-Platform)</span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-label">State Management</span>
+                  <span class="meta-value">Riverpod (flutter_riverpod)</span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-label">Backend & API</span>
+                  <span class="meta-value">Python, Django REST Framework</span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-label">Identity Provider</span>
+                  <span class="meta-value">OIDC Provider (PKCE S256)</span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-label">Data Visualization</span>
+                  <span class="meta-value">fl_chart (Pie Chart)</span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-label">Database & Tools</span>
+                  <span class="meta-value">SQLite / Relational DB, uv</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Key Engineering Highlights Grid -->
+            <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--text-main); margin: 1.5rem 0 0.75rem;">
+              จุดเด่นด้านเทคนิคและวิศวกรรมระบบ (Technical Highlights)
+            </h4>
+
+            <div class="system-modules-grid">
+              <div class="module-card">
+                <h4>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                  1. Security First (OIDC + PKCE)
+                </h4>
+                <p>
+                  แทนที่จะใช้ Basic JWT ทั่วไป ระบบเลือก Implement <strong>OpenID Connect Authorization Code Flow with PKCE (S256)</strong> ซึ่งเป็นมาตรฐานความปลอดภัยสูงสุดสำหรับ Mobile/SPA Client ป้องกันการดักจับ Authorization Code
+                </p>
+              </div>
+
+              <div class="module-card">
+                <h4>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+                  2. Reactive UI & Clean Architecture
+                </h4>
+                <p>
+                  แยกเลเยอร์ชัดเจน (Models, Services, Providers, Screens) และใช้ <strong>Riverpod</strong> ในการดึงและกระจายข้อมูล รองรับ Dependency Injection และ Caching ทำให้โค้ด Reusable และ Test ได้ง่าย
+                </p>
+              </div>
+
+              <div class="module-card">
+                <h4>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  3. Server-Side Gamification Engine
+                </h4>
+                <p>
+                  คำนวณ Level, XP, Streak Days และ Gacha Probabilities ในระดับ Backend Model และ DRF Serializers เพื่อป้องกันการโกงคะแนนและไอเทมจากฝั่ง Client
+                </p>
+              </div>
+
+              <div class="module-card">
+                <h4>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 10"></polyline></svg>
+                  4. Tree Evolution & Gacha Inventory
+                </h4>
+                <p>
+                  ระบบต้นไม้เติบโต 4 ระดับ (Seed ➔ Plant ➔ Tree ➔ Golden Tree) ตามจำนวนวัน Streak พร้อมระบบสุ่มกาชาไอเทมตกแต่ง (หมวก, กระถาง, พื้นหลัง) แบ่งตาม Rarity (Common, Rare, Epic, Legendary)
+                </p>
+              </div>
+
+              <div class="module-card">
+                <h4>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
+                  5. Financial Analytics & fl_chart
+                </h4>
+                <p>
+                  แสดงภาพรวมยอดคงเหลือ รายรับ-รายจ่ายแบบ Real-time พร้อมแผนภูมิวงกลม (Pie Chart) จำแนกสัดส่วนค่าใช้จ่ายตามหมวดหมู่ และฟิลเตอร์ค้นหาประวัติตามเดือน
+                </p>
+              </div>
+
+              <div class="module-card">
+                <h4>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                  6. Multi-Wallet & UX Resilience
+                </h4>
+                <p>
+                  จัดการกระเป๋าเงินได้หลายใบพร้อมสัตว์เลี้ยงประจำกระเป๋า รองรับ Light/Dark Mode และมีระบบตรวจจับ Network Disconnect พร้อมปุ่ม Retry เพื่อประสบการณ์ใช้งานที่ต่อเนื่อง
+                </p>
+              </div>
+            </div>
+
+            <!-- Tech Badges -->
+            <div class="project-techs">
+              <span class="tech-tag" style="background: #02569B; color: #fff; border-color: #02569B;">Flutter / Dart</span>
+              <span class="tech-tag" style="background: #092e20; color: #44b78b; border-color: #44b78b;">Django REST Framework</span>
+              <span class="tech-tag">Riverpod State Management</span>
+              <span class="tech-tag">OAuth 2.0 / OpenID Connect (OIDC)</span>
+              <span class="tech-tag">PKCE S256 Security</span>
+              <span class="tech-tag">Gamification Engine (Streak & Tree Evolution)</span>
+              <span class="tech-tag">fl_chart</span>
+              <span class="tech-tag">flutter_secure_storage</span>
+              <span class="tech-tag">SQLite / Relational DB</span>
+              <span class="tech-tag">uv Package Manager</span>
+            </div>
+          </div>
+
+          <!-- Project 5: Service Booking (Restaurant Table Reservation System) -->
           <div class="project-card">
             <span class="project-badge-top badge-mini">Mini Project • Web System</span>
             <h3 class="project-title">Service Booking</h3>
