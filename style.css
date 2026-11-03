@@ -663,7 +663,78 @@ section {
   font-weight: 700;
 }
 
-/* System Features Cards */
+/* Arch Diagram Box */
+.arch-diagram-box {
+  background: #0f172a;
+  color: #e2e8f0;
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  overflow-x: auto;
+  border: 1px solid var(--border-color);
+  margin: 1.25rem 0 1.75rem;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.arch-diagram-box pre {
+  margin: 0;
+  white-space: pre;
+}
+
+[data-theme="dark"] .arch-diagram-box {
+  background: #090d16;
+  border-color: #334155;
+}
+
+/* Feature Two-Column Grid */
+.features-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 1.25rem 0 1.75rem;
+}
+
+@media (max-width: 768px) {
+  .features-two-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+.info-banner {
+  background: var(--bg-alt);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--primary);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+}
+
+.info-banner h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.info-banner p, .info-banner ul {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.info-banner ul {
+  padding-left: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.info-banner li {
+  margin-bottom: 0.35rem;
+}
 .system-modules-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
