@@ -663,6 +663,56 @@ section {
   font-weight: 700;
 }
 
+.badge-arch {
+  background: #fdf2f8;
+  color: #9d174d;
+  border: 1px solid #fbcfe8;
+}
+
+[data-theme="dark"] .badge-arch {
+  background: rgba(219, 39, 119, 0.15);
+  color: #f472b6;
+  border-color: rgba(219, 39, 119, 0.3);
+}
+
+.patterns-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 1.75rem;
+}
+
+.pattern-card {
+  background: var(--bg-alt);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.15rem;
+  transition: var(--transition);
+}
+
+.pattern-card:hover {
+  background: var(--bg-surface);
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.pattern-card h5 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.pattern-card p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin: 0;
+}
+
 /* Arch Diagram Box */
 .arch-diagram-box {
   background: #0f172a;
